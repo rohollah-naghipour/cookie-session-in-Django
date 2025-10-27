@@ -144,9 +144,6 @@ GitHub.sublime-settings
 .env
 *.env
 
-# Database
-*.sqlite3
-*.db
 
 # PyCharm
 .idea/
