@@ -1,3 +1,14 @@
+# project run
+
+How to use
+Run the project
+Scripts in the script folder Submit Request
+And run in another terminal
+And check the result
+Successful
+Rohy :)
+
+
 # Cookies and Sessions
 
 A comprehensive guide and implementation reference for understanding and working with cookies and sessions in web applications.

@@ -1,0 +1,12 @@
+import requests
+
+response = requests.get("http://127.0.0.1:8000")
+
+print(response.headers)
+
+
+#print(response.headers["Set-Cookie"])  
+#print(response.headers["Content-Length"])
+ 
+#print(response.text)
+#print(response.status_code) 

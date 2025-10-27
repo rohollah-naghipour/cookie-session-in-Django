@@ -57,19 +57,19 @@ def get_session_view(request):
 
 
 # AFTER FORM
-
-
 def login_view1(request):
     if request.method == "POST":
+        print("request.POST =", request.POST)
         form = LoginForm(request.POST)
         if form.is_valid():
             username = form.cleaned_data["username"]
             password = form.cleaned_data["password"]
 
-        try:
+        try:    
             user = User.objects.get(username=username)
             print('request.user =', request.user)
             print('user =', user)
+            print('username send by the user =', username)
 
             if check_password(password, user.password):
                 print('The password sent by the user =', password)
@@ -86,6 +86,7 @@ def login_view1(request):
 
     form = LoginForm()
     return render(request, "login.html", {"form": form})
+
 
 def home_view1(request):
     user = request.session.get("user")

@@ -91,3 +91,24 @@ STATIC_URL = 'static/'
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+#SESSION CONFIGURATION
+
+#Session cookie age in seconds
+SESSION_COOKIE_AGE = 3600
+
+# Expire session when browser closes (overrides SESSION_COOKIE_AGE)
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
+# Save session data on every request (resets the expiry time)
+SESSION_SAVE_EVERY_REQUEST = True
+
+# Use secure cookies (HTTPS only)
+#SESSION_COOKIE_SECURE = True
+
+# Prevent JavaScript access to session cookie
+SESSION_COOKIE_HTTPONLY = True
+
+# SameSite attribute for CSRF protection
+SESSION_COOKIE_SAMESITE = 'Lax'
